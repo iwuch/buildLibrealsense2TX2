@@ -2,6 +2,8 @@
 # Patch the kernel for the Intel Realsense library librealsense on a Jetson TX2 Developer Kit
 # MIT License
 
+## I'm not sure what version of my librealsense
+################################################
 LIBREALSENSE_DIRECTORY=${HOME}/librealsense
 LIBREALSENSE_VERSION=v2.22.0
 
@@ -49,11 +51,14 @@ set -e
 # The KERNEL_BUILD_VERSION is the release tag for the JetsonHacks buildKernel repository
 KERNEL_BUILD_VERSION=master
 # Quotes around Jetson Board because the name may have a space, ie "AGX Xavier"
+
+################This may need to be modified for the version of my TX2 is L4T 32.2.1
+
 if [ $JETSON_BOARD == "TX2" ] ; then
-L4TTarget="32.1.0"
+L4TTarget="32.2.1"
   # Test for 28.2.1 first
-  if [ $JETSON_L4T = "32.1.0" ] ; then
-     KERNEL_BUILD_VERSION=vL4T32.1.0
+  if [ $JETSON_L4T = "32.2.1" ] ; then
+     KERNEL_BUILD_VERSION=vL4T32.2.1
   elif [ $JETSON_L4T = "28.2" ] ; then
      KERNEL_BUILD_VERSION=vL4T28.2r3
   else
