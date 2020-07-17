@@ -1,7 +1,7 @@
 # buildLibrealsense2TX2
 Build librealsense 2.0 library on the NVIDIA Jetson TX2 Developer Kit. Intel RealSense D400 series cameras.
 
-This is for version L4T 32.1 (JetPack 4.2), librealsense v2.22.0.
+This is for version L4T 32.2.1 (JetPack 4.2), librealsense v2.22.0.
 
 Reference link:
 
@@ -51,12 +51,12 @@ Note that you will need to recompile the library and application for these to ta
 
 Release Notes:
 
-May, 2019
+July, 2020
 
 * Initial Release - v0.8
 * NVIDIA Jetson TX2
 * JetPack 4.2 (Developers Preview)
-* L4T 32.1
+* L4T 32.2.1
 * Tested on D435i and D435 Intel Realsense Cameras
 
 
